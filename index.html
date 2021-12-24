@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Etch a Piano</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <header>
+      <h1 class="title">Etch a Piano</h1>
+    </header>
+    <main>
+      <section class="controls">
+        <div class="color-picker">
+          <div class="pen-color">
+            <div class="round">
+              <input type="color" value="#fca311" name="picker" id="pen" />
+            </div>
+            <label for="pen">Pen Color</label>
+          </div>
+          <div class="bg-color">
+            <div class="round">
+              <input type="color" value="#8338ec" name="picker" id="bg" />
+            </div>
+            <label for="bg">Background Color</label>
+          </div>
+        </div>
+        <div class="buttons">
+          <button class="btn btn-classic active">Classic</button>
+          <button class="btn btn-rainbow">Rainbow</button>
+          <button class="btn btn-eraser">Eraser</button>
+          <button class="btn-clear">Clear</button>
+        </div>
+
+        <div class="sliders">
+          <div class="col-slider">
+            <input
+              class="slider"
+              type="range"
+              min="1"
+              max="64"
+              value="16"
+              id="col-number"
+            />
+            <label for="col-number">Column size: 16</label>
+          </div>
+          <div class="row-slider">
+            <input
+            class="slider"
+              type="range"
+              min="1"
+              max="64"
+              value="16"
+              id="row-number"
+            />
+            <label for="row-number">Row size: 16</label>
+          </div>
+        </div>
+        
+       
+      </section>
+      <section class="grid"></section>
+    </main>
+    <footer>
+      <p>Copyright © 2021 uysalherif</p>
+      <a href="https://github.com/uysalherif" target=".blank">
+        <img src="icon/github.png" class="github-link"></img>
+      </a>
+    </footer>
+    </form>
+  </body>
+</html>
