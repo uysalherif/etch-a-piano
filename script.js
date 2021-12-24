@@ -66,13 +66,14 @@ function createGrid(column, row) {
 function setPiano() {
   let audio;
   if (currentMode === 'classic') {
-    audio = new Audio(`/piano/${currentSound}.mp3`);
+    audio = new Audio(`piano/${currentSound}.mp3`);
   } else if (currentMode === 'rainbow') {
     let random = Math.floor(Math.random() * 89 + 1);
-    audio = new Audio(`/piano/${random}.mp3`);
+    audio = new Audio(`piano/${random}.mp3`);
   } else if (currentMode === 'eraser') {
-    audio = new Audio(`/piano/89.mp3`);
+    audio = new Audio(`piano/89.mp3`);
   }
+  audio.load();
   audio.play();
 }
 
